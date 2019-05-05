@@ -1,2 +1,2 @@
 # TDD
-TDD Test Project
+TDD Example Test Project
