@@ -3,10 +3,11 @@ package com.wooklab.tdd;
 public class Franc extends Money {
 
     public Franc(int amount) {
-        this.amount = amount;
+        super.amount = amount;
     }
 
-    Franc times(int multiplier) {
-        return new Franc(amount * multiplier);
+    @Override
+    Money times(int multiplier) {
+        return new Franc(super.amount * multiplier);
     }
 }

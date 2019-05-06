@@ -2,10 +2,12 @@ package com.wooklab.tdd;
 
 public class Dollar extends Money {
     public Dollar(int amount) {
-        this.amount = amount;
+        super.amount = amount;
     }
 
-    Dollar times(int multiplier) {
-        return new Dollar(amount * multiplier);
+
+    @Override
+    Money times(int multiplier) {
+        return new Dollar(super.amount * multiplier);
     }
 }
